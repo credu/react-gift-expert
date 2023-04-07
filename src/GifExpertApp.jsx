@@ -1,9 +1,6 @@
 import { useState } from 'react'
 import { AddCategory, GifGrid } from './components';
 
-Array.prototype.move = function (from, to) {
-  this.splice(to, 0, this.splice(from, 1)[0]);
-};
 
 export const GifExpertApp = () => {
   const [categorias, setCategorias] = useState( ['One Punch'] );
